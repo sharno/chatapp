@@ -1,0 +1,16 @@
+[package]
+name = "chatapp"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+axum = "0.6.20"
+base64 = "0.21.4"
+ed25519-dalek = { version = "2.0.0", features = ["rand_core", "serde"] }
+rand = "0.8.5"
+rsa = { version = "0.9.2", features = ["getrandom", "serde"] }
+serde = { version = "1.0.189", features = ["derive"] }
+sqlite = "0.31.1"
+tokio = { version = "1.33.0", features = ["full"] }
